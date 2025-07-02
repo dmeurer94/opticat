@@ -1,0 +1,4 @@
+rnd_freq [0,1][0]
+cla_decay [0,1][0.999]
+var_decay [0,1][0.8]
+max_var_decay[0,1][0.95]

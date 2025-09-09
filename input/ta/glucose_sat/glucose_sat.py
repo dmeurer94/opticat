@@ -40,9 +40,12 @@ def solve_cnf(file_path, parameters):
 
     end_time = time.time()
 
+    # Calculate run time and return value
     duration = end_time-start_time
 
     solver.delete()
+
+    #print(f"Duration: {duration}")
 
     return duration
 
@@ -75,6 +78,7 @@ if __name__ == "__main__":
 
     file_path = 'uf200-01.cnf'
 
+    print("Running solve_cnf now")
     result = solve_cnf(file_path, parameters)
     print(f"output: {result}")
     time.sleep(0.3)

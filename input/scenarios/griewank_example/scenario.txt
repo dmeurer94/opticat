@@ -1,5 +1,5 @@
-paramfile = ./input/ta/ackley/params.pcs
+paramfile = ./input/ta/griewank/params.pcs
 run_obj = quality 
 cutoff_time = 100
 wallclock_limit = 3600 
-instance_file = ./input/data/ackley/training_glucose.txt
+instance_file = ./input/data/griewank/training_glucose.txt

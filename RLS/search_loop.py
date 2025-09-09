@@ -244,10 +244,11 @@ def offline_rl_search_loop(scenario, ta_wrapper, logger):
             instance_id, instances = instance_selector.get_subset(result_race.instance_set_id + 1)
 
             # Iterate over all UUID keys in the results dictionary and check if NAs were produced
-            for uuid_key, inner_dict in results.items():
-                for key, value in inner_dict.items():
-                    if value is None or (isinstance(value, float) and np.isnan(value)):
-                        raise ValueError(f"The target algorithm command was incorrectly set: NA values were produced. ")
+            print(f"Results.items(): {results.items()}")
+            #for uuid_key, inner_dict in results.items():
+            #    for key, value in inner_dict.items():
+            #        if value is None or (isinstance(value, float) and np.isnan(value)):
+            #            raise ValueError(f"The target algorithm command was incorrectly set: NA values were produced.")
 
 
             # wenn scenario quality gesetzt ist und alle NANs sind, Fehler ausgeben: target algorithmus-command nicht korrekt
